@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jurnal harian Muhammad Ridhan AisyFarizi, siswa XI PPLG 1 SMKN 4 Kuningan.">
+    <title>Blog &amp; Jurnal - Muhammad Ridhan AisyFarizi | XI PPLG 1</title>
+    <link rel="icon" href="https://www.smkn4kuningan.sch.id/favicon-32x32.png">
+
+    <script>try{var t=localStorage.getItem("tema");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Newsreader:wght@400;500&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="site.js" defer></script>
+</head>
+<body class="p-blog">
+    <a class="skip" href="#konten-utama">Lewati ke konten</a>
+    <header class="topbar"><div class="topbar-in"><a class="brand" href="beranda.html" aria-label="Muhammad Ridhan AisyFarizi"><span class="mono">MRA</span><span class="brand-t">Ridhan AisyFarizi</span></a><nav class="nav-utama" aria-label="Navigasi utama"><a href="beranda.html">&#127968; Beranda</a><a href="profil.html">&#127380; Profil Siswa</a><a href="galeri.html">&#128249; Galeri Karya</a><a href="blog.html" aria-current="page">&#128211; Blog</a></nav></div></header>
+
+    <!-- Header & Menu Navigasi -->
+    <header id="header-blog" class="hero">
+        <h1>Jurnal Harian Siswa PPLG</h1>
+    </header>
+
+    <!-- Konten Utama -->
+    <main id="konten-utama">
+
+        <!-- Artikel Curhat Utama -->
+        <article class="post-jurnal">
+            <h2>Cerita Seminggu Bertarung dengan HTML</h2>
+            <p class="meta"><small>Dipublikasikan pada: <time datetime="2026-10-03">3 Oktober 2026</time></small></p>
+
+            <!-- Foto Dokumentasi Orisinal -->
+            <figure class="foto-jurnal">
+                <img src="foto-jurnal.jpg" alt="Laptop yang sedang membuka VS Code di meja belajar">
+                <figcaption>Dokumentasi: meja belajar dan VS Code yang hampir tiap hari kepake</figcaption>
+            </figure>
+
+            <!-- Babak 1 -->
+            <section class="babak-cerita">
+                <h3>Awal Mula Masuk PPLG</h3>
+                <p>Dari dulu saya suka main game sih, sering kepikiran sebenarnya tampilan di layar itu dibuat pakai apa sih? kok bisa gitu sih?. Mulai dari smp kelas 8 udah nyoba dasar html. Dari rasa penasaran itu saya pilih masuk jurusan PPLG di SMKN 4 Kuningan. Awalnya cuma pengin tahu, tapi pas pertama kali ngetik &lt;h1&gt; dan hasilnya langsung muncul di browser, rasanya seruuuuu bangetttttttttttt. Dari situ saya mulai suka ngoding.</p>
+            </section>
+
+            <!-- Babak 2 -->
+            <section class="babak-cerita">
+                <h3>Drama Kena Bug &amp; Layar Merah</h3>
+                <p>Momen paling bikin pusing itu waktu bikin tabel jadwal pelajaran. Rowspan sama colspan kelihatannya gampang, tapi pas salah hitung satu sel aja baris di bawahnya langsung geser trus tabelnya berantakan. Saya sampai ngitung ulang jam pelajaran satu per satu, apalagi jadwal Rabu dan Jumat jamnya beda sendiri. Ya endingnya malah jadi paham kenapa tag penutup dan kerapian kode itu penting.</p>
+            </section>
+
+            <!-- Babak 3 -->
+            <section class="babak-cerita">
+                <h3>Pelajaran &amp; Harapan Saya</h3>
+                <p>Yang saya dapat sejauh ini: gausah panik kalo tampilan error, coba cek pelan-pelan dari tag yang paling deket. Harapan saya, setelah lulus dari PPLG pengen nanti bisa kerja atau bikin proyek web sendiri. Sekarang saya masih terus belajar HTML, CSS, dan PHP sedikit.</p>
+            </section>
+
+            <!-- Form Komentar -->
+            <section class="area-komentar">
+                <h3>Tinggalkan Komentar</h3>
+                <form id="form-komentar" novalidate action="#" method="post">
+                    <label for="nama-komentar">Nama</label>
+                    <input type="text" id="nama-komentar" name="nama" placeholder="Nama kamu" required>
+
+                    <label for="isi-komentar">Komentar</label>
+                    <textarea id="isi-komentar" name="komentar" rows="4" placeholder="Tulis komentar di sini..." required></textarea>
+
+                    <button type="submit" class="btn btn-primary">Kirim</button>
+                    <p id="pesan-komentar" role="status" aria-live="polite"></p>
+                </form>
+            </section>
+        </article>
+
+        <!-- Sidebar -->
+        <aside id="sidebar-blog">
+            <div class="widget">
+                <h3>Author</h3>
+                <p><strong>Muhammad Ridhan AisyFarizi</strong><br>Siswa XI PPLG 1 SMKN 4 Kuningan. Suka ngoding (dikit), suka error, BISMILLAH UNPAD.</p>
+            </div>
+
+            <div class="widget">
+                <h3>Kategori Tag</h3>
+                <span class="badge-tag">#TemankuSemuaPadaJahatTante</span>
+                <span class="badge-tag">#PPLG</span>
+                <span class="badge-tag">#Teknik</span>
+                <span class="badge-tag">#Error</span>
+            </div>
+        </aside>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer-blog" class="foot">
+        <p>&copy; 2026 - PPLG SMKN 4 Kuningan | Dibuat oleh Muhammad Ridhan AisyFarizi</p>
+    </footer>
+
+</body>
+</html>

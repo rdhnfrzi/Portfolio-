@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- KONFIGURASI META TAG -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website portofolio resmi Muhammad Ridhan AisyFarizi siswa XI PPLG I SMKN 4 Kuningan.">
+    <meta name="author" content="Muhammad Ridhan AisyFarizi">
+
+    <!-- JUDUL TAB & FAVICON -->
+    <title>Beranda Portofolio - Muhammad Ridhan AisyFarizi | XI PPLG I</title>
+    <link rel="icon" href="https://www.smkn4kuningan.sch.id/favicon-32x32.png">
+
+    <!-- INTERNAL CSS STYLING -->
+    <script>try{var t=localStorage.getItem("tema");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Newsreader:wght@400;500&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="site.js" defer></script>
+</head>
+<body class="p-beranda">
+    <a class="skip" href="#main">Lewati ke konten</a>
+    <header class="topbar"><div class="topbar-in"><a class="brand" href="beranda.html" aria-label="Muhammad Ridhan AisyFarizi"><span class="mono">MRA</span><span class="brand-t">Ridhan AisyFarizi</span></a><nav class="nav-utama" aria-label="Navigasi utama"><a href="beranda.html" aria-current="page">&#127968; Beranda</a><a href="profil.html">&#127380; Profil Siswa</a><a href="galeri.html">&#128249; Galeri Karya</a><a href="blog.html">&#128211; Blog</a></nav></div></header>
+    <main class="wrap" id="main">
+
+    <!-- HEADER (hero) -->
+    <header class="hero card">
+        <p class="hero-logo">
+            <a href="https://smkn4kuningan.sch.id" target="_blank" rel="noopener">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-QwSTyiqAFYREpajq7vtpYxCvIY4Ld6sYv-0xsaN-lg&s=10" alt="Logo SMKN 4 Kuningan">
+            </a>
+        </p>
+        <h1 id="top">&#127979; Portal Siswa Muhammad Ridhan AisyFarizi</h1>
+        <p class="hero-jump"><a href="#info-kegiatan">&#128071; Lompat ke Agenda Belajar</a></p>
+        <nav class="quick" aria-label="Navigasi cepat">
+            <a href="#info-kegiatan">Agenda belajar</a>
+            <a href="#jadwal">Jadwal pelajaran</a>
+            <a href="#panduan">Panduan kode</a>
+        </nav>
+    </header>
+
+    <!-- KARTU 2: UCAPAN & PENGANTAR -->
+    <div class="card">
+        <p>
+            <span>&#128075;</span> Selamat datang di situs portofolio saya!
+        </p>
+        <p>Selama belajar di jurusan <b>PPLG SMKN 4 Kuningan</b>, saya mempelajari banyak konsep seperti <span class="highlight">Responsive</span> web design, elemen <span class="highlight">Semantic</span> HTML, serta pemutar <span class="highlight">Multimedia</span> interaktif.</p>
+    </div>
+
+    <div class="media-grid">
+    <!-- KARTU 3: SHOWCASE VIDEO -->
+    <div class="card">
+        <h3>Showcase Media &amp; Dokumentasi Belajar</h3>
+        <p>Berikut adalah cuplikan video dokumentasi media pembelajaran interaktif:</p>
+        <div class="media-container">
+            <figure>
+                <video controls poster="https://vjs.zencdn.net/v/oceans.png">
+                    <source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung tag video HTML5.
+                </video>
+                <figcaption>Cuplikan Video: Khazanah Keindahan Samudra</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <!-- KARTU 4: MEDIA AUDIO & SUARA PEMBELAJARAN -->
+    <div class="card">
+        <h3>Media Audio &amp; Suara Pembelajaran</h3>
+        <p><b>Sampel Efek Suara Kuda (W3Schools CDN):</b></p>
+        <p>Efek suara ini menggunakan fitur <i>multi-source fallback</i> (menyediakan format MP3 dan OGG).</p>
+        <div class="media-container">
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                Browser Anda tidak mendukung tag audio HTML5.
+            </audio>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- KARTU 5: AGENDA BELAJAR RINGKAS -->
+    <div class="card" id="info-kegiatan">
+        <h3>&#128216; Agenda Belajar Lab</h3>
+        <ul>
+            <li>&#11088; Membuat Struktur Dasar HTML</li>
+            <li>&#11088; Integrasi Media Pemutar Video &amp; Audio HTML5</li>
+            <li>&#11088; Implementasi Iframe dan Navigasi Multi-Halaman</li>
+        </ul>
+    </div>
+
+    <!-- KARTU 6: JADWAL PELAJARAN KELAS (TABEL HTML5) -->
+    <div class="tabel-wrap tabel-responsif" id="jadwal" role="region" aria-label="Jadwal pelajaran (geser ke samping untuk melihat semua kolom)" tabindex="0">
+        <table class="tabel-jadwal">
+            <caption>Jadwal Pelajaran Kelas XI PPLG 1 - Muhammad Ridhan AisyFarizi (Semester Gasal TP 2026/2027)</caption>
+
+            <colgroup>
+                <col class="kol-jam">
+                <col class="kol-waktu">
+                <col span="5">
+            </colgroup>
+
+            <thead>
+                <tr>
+                    <th scope="col">Jam Ke</th>
+                    <th scope="col">Waktu</th>
+                    <th scope="col">Senin</th>
+                    <th scope="col">Selasa</th>
+                    <th scope="col">Rabu</th>
+                    <th scope="col">Kamis</th>
+                    <th scope="col">Jumat</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- Jam 1 -->
+                <tr>
+                    <th scope="row">1</th>
+                    <td>06.30 - 07.15<small>Rabu &amp; Jumat: 06.30 - 07.10</small></td>
+                    <td><span class="badge abu">Upacara</span></td>
+                    <td rowspan="4"><span class="badge biru">Rekayasa Perangkat Lunak</span></td>
+                    <td rowspan="3">Matematika</td>
+                    <td rowspan="3">PAIBP</td>
+                    <td><span class="badge abu">Pembinaan</span></td>
+                </tr>
+                <!-- Jam 2 -->
+                <tr>
+                    <th scope="row">2</th>
+                    <td>07.15 - 08.00<small>Rabu &amp; Jumat: 07.10 - 07.50</small></td>
+                    <td rowspan="2">Bahasa Inggris</td>
+                    <td rowspan="2">Bahasa Sunda</td>
+                </tr>
+                <!-- Jam 3 -->
+                <tr>
+                    <th scope="row">3</th>
+                    <td>08.00 - 08.45<small>Rabu &amp; Jumat: 07.50 - 08.30</small></td>
+                </tr>
+                <!-- Jam 4 -->
+                <tr>
+                    <th scope="row">4</th>
+                    <td>08.45 - 09.30<small>Rabu &amp; Jumat: 08.30 - 09.10</small></td>
+                    <td><span class="badge biru">Rekayasa Perangkat Lunak</span></td>
+                    <td><span class="badge biru">Rekayasa Perangkat Lunak</span></td>
+                    <td>Bahasa Indonesia</td>
+                    <td><span class="badge biru">Rekayasa Perangkat Lunak</span></td>
+                </tr>
+
+                <!-- Istirahat 1 -->
+                <tr class="istirahat">
+                    <td>-</td>
+                    <td>09.30 - 09.50<small>Rabu &amp; Jumat: 09.10 - 09.30</small></td>
+                    <td colspan="5"><span class="badge kuning">ISTIRAHAT</span></td>
+                </tr>
+
+                <!-- Jam 5 -->
+                <tr>
+                    <th scope="row">5</th>
+                    <td>09.50 - 10.35<small>Rabu &amp; Jumat: 09.30 - 10.10</small></td>
+                    <td><span class="badge biru">Rekayasa Perangkat Lunak</span></td>
+                    <td rowspan="2">Bahasa Inggris</td>
+                    <td rowspan="3"><span class="badge biru">Rekayasa Perangkat Lunak</span></td>
+                    <td rowspan="2">Bahasa Indonesia</td>
+                    <td rowspan="3"><span class="badge biru">Rekayasa Perangkat Lunak</span></td>
+                </tr>
+                <!-- Jam 6 -->
+                <tr>
+                    <th scope="row">6</th>
+                    <td>10.35 - 11.20<small>Rabu &amp; Jumat: 10.10 - 10.50</small></td>
+                    <td rowspan="2"><span class="badge biru">Mapel Pilihan PPLG</span></td>
+                </tr>
+                <!-- Jam 7 -->
+                <tr>
+                    <th scope="row">7</th>
+                    <td>11.20 - 12.05<small>Rabu &amp; Jumat: 10.50 - 11.30</small></td>
+                    <td><span class="badge hijau">Penjasorkes</span></td>
+                    <td><span class="badge biru">Rekayasa Perangkat Lunak</span></td>
+                </tr>
+
+                <!-- Istirahat 2 (Jumat sudah pulang) -->
+                <tr class="istirahat">
+                    <td>-</td>
+                    <td>12.05 - 12.35<small>Rabu: 12.10 - 12.40 (setelah jam ke-8)</small></td>
+                    <td colspan="4"><span class="badge kuning">ISTIRAHAT</span></td>
+                    <td rowspan="6" class="kosong">Pulang</td>
+                </tr>
+
+                <!-- Jam 8 -->
+                <tr>
+                    <th scope="row">8</th>
+                    <td>12.35 - 13.15<small>Rabu: 11.30 - 12.10</small></td>
+                    <td rowspan="2"><span class="badge biru">Mapel Pilihan PPLG</span></td>
+                    <td><span class="badge hijau">Penjasorkes</span></td>
+                    <td rowspan="5">KIK</td>
+                    <td rowspan="3"><span class="badge biru">Rekayasa Perangkat Lunak</span></td>
+                </tr>
+                <!-- Jam 9 -->
+                <tr>
+                    <th scope="row">9</th>
+                    <td>13.15 - 13.55<small>Rabu: 12.40 - 13.20</small></td>
+                    <td rowspan="2">Sejarah</td>
+                </tr>
+                <!-- Jam 10 -->
+                <tr>
+                    <th scope="row">10</th>
+                    <td>13.55 - 14.35<small>Rabu: 13.20 - 14.00</small></td>
+                    <td rowspan="2">Pend. Pancasila</td>
+                </tr>
+                <!-- Jam 11 -->
+                <tr>
+                    <th scope="row">11</th>
+                    <td>14.35 - 15.15<small>Rabu: 14.00 - 14.40</small></td>
+                    <td rowspan="2" class="kosong">-</td>
+                    <td rowspan="2" class="kosong">-</td>
+                </tr>
+                <!-- Jam 12 (cuma ada di hari Rabu) -->
+                <tr>
+                    <th scope="row">12</th>
+                    <td>14.40 - 15.20<small>Hanya hari Rabu</small></td>
+                    <td class="kosong">-</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3"><b>Wali Kelas:</b>Beri Epridiansyah S.Pd</td>
+                    <td colspan="4"><b>Catatan:</b> Jam pelajaran Rabu &amp; Jumat lebih singkat (40 menit), jadi waktunya beda dari hari lain.</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <!-- KARTU 7: PANDUAN PINTASAN & STRUKTUR KODE -->
+    <div class="card" id="panduan">
+        <h3>Panduan Pintasan &amp; Struktur Kode</h3>
+        <p>Pintasan keyboard penting di VS Code:</p>
+        <ul>
+            <li>Membuka Terminal: Tekan <kbd>Ctrl</kbd> + <kbd>`</kbd></li>
+            <li>Format Dokumen Otomatis: Tekan <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd></li>
+        </ul>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Halo Dunia&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        <p>Status Kompilasi Terminal: <samp>Build completed successfully in 1.2s</samp></p>
+        <p><a href="#top">&#11014; Kembali ke Atas Halaman</a></p>
+    </div>
+
+    <!-- FOOTER HAK CIPTA -->
+    </main>
+    <footer class="foot">
+    <p>
+        &copy; 2026 Dibuat oleh <b>Muhammad Ridhan AisyFarizi</b> - <b>XI PPLG I</b> SMKN 4 Kuningan
+    </p>
+    </footer>
+
+</body>
+</html>

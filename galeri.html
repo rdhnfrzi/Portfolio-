@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeri Karya dan Eksplorasi Iframe Muhammad Ridhan AisyFarizi.">
+    <title>Galeri Karya - Muhammad Ridhan AisyFarizi | XI PPLG I</title>
+    <link rel="icon" href="https://www.smkn4kuningan.sch.id/favicon-32x32.png">
+
+    <script>try{var t=localStorage.getItem("tema");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Newsreader:wght@400;500&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="site.js" defer></script>
+</head>
+<body class="p-galeri">
+    <a class="skip" href="#main">Lewati ke konten</a>
+    <header class="topbar"><div class="topbar-in"><a class="brand" href="beranda.html" aria-label="Muhammad Ridhan AisyFarizi"><span class="mono">MRA</span><span class="brand-t">Ridhan AisyFarizi</span></a><nav class="nav-utama" aria-label="Navigasi utama"><a href="beranda.html">&#127968; Beranda</a><a href="profil.html">&#127380; Profil Siswa</a><a href="galeri.html" aria-current="page">&#128249; Galeri Karya</a><a href="blog.html">&#128211; Blog</a></nav></div></header>
+    <main class="wrap" id="main">
+    <header class="page-head"><h1>Galeri Karya</h1></header>
+
+    <div class="card">
+        <h3>Video Rekomendasi Belajar</h3>
+        <p>Tutorial: <b>1. Apa itu HTML5? | Belajar HTML5 (Web Programming UNPAS)</b></p>
+        
+        <iframe 
+            src="https://www.youtube.com/embed/Q2VqCG13ejA" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen 
+            title="1. Apa itu HTML5? | Belajar HTML5">
+        </iframe>
+    </div>
+
+    <div class="card">
+        <h3>Layar Demo Antar Halaman</h3>
+        <p>Klik tautan di bawah ini untuk memuat halaman secara dinamis di dalam kotak iframe (tanpa me-reload tab utama):</p>
+        
+        <ul class="demo-links">
+            <li><a href="beranda.html" target="proyektor-karya">Link Mengarah ke beranda.html lokal</a></li>
+            <li><a href="profil.html" target="proyektor-karya">Link Mengarah ke profil.html lokal</a></li>
+        </ul>
+
+        <iframe name="proyektor-karya" src="beranda.html" width="100%" height="320" title="Layar Demo"></iframe>
+    </div>
+
+    </main>
+    <footer class="foot">
+    <p>
+        © 2026 <b>Muhammad Ridhan AisyFarizi</b> - <b>XI PPLG I</b> SMKN 4 Kuningan
+    </p>
+    </footer>
+
+</body>
+</html>
